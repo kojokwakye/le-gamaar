@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #14181c url(../img/content-bg.0d9a0f0f.png) 0 -1px repeat-x;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  color: #9ab;
+}
+#choice {
+  margin: 15px;
+}
+p#movieTitle {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#backdrop {
+  max-width: 100%;
+  height: auto;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+}
+
+p#synopsis {
+  margin: 20px 0;
+  line-height: 25px;
+  width: 100%;
+}
+button#pickbtn {
+  margin: 10px;
+}
+.button-55 {
+  align-self: center;
+  background-color: rgba(153, 170, 187, 0.241);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #9ab;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #choice {
+    width: 50%;
+    /* background-color: #fff; */
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  #choice {
+    width: 50%;
+  }
+}
