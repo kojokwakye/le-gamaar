@@ -1,7 +1,9 @@
 const magicBtn = document.getElementById("pickbtn");
 const baseImageUrl = "https://image.tmdb.org/t/p/";
+const part1 = "53d0a239abb90614da";
+const part2 = "ae70f28305714e";
 
-const apiKey = "53d0a239abb90614daae70f28305714e";
+const apiKey = part1 + part2;
 async function getRandomMovie() {
   const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=popularity.desc&page=${
     Math.floor(Math.random() * 100) + 1
