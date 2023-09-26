@@ -71,19 +71,17 @@ button#pickbtn {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
 .button-55:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
-
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
-
-.magnet {
-  width: 25px;
-  height: 25px;
+a {
+  color: #9ab;
+  cursor: pointer;
+  text-decoration: none;
 }
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
