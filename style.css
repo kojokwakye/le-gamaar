@@ -1,59 +1,65 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 body {
-  background: #14181c url(../img/content-bg.0d9a0f0f.png) 0 -1px repeat-x;
-  display: flex;
-  flex-direction: column;
+  background: url("../img/content-bg.0d9a0f0f.png") 0px -1px repeat-x rgb(20, 24, 28);
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
   font-family: Neucha, sans-serif;
   font-size: 1rem;
-  color: #9ab;
+  text-align: center;
+  color: rgb(153, 170, 187);
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
 }
+
 #choice {
   margin: 10px;
 }
+
 p#movieTitle {
   font-size: 40px;
   font-weight: bold;
 }
 
 #backdrop {
-  max-width: 100%;
-  height: auto;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
+  max-width: 350px;
+  height: 340px;
 }
 
 p#synopsis {
-  margin: 20px 0;
+  margin: 20px 0px;
   line-height: 25px;
   width: 100%;
 }
+
 button#pickbtn {
   margin: 10px;
 }
+
 .button-55 {
   align-self: center;
-  background-color: rgba(153, 170, 187, 0.241);
+  background-color: rgba(153, 170, 187, 0.24);
   background-image: none;
-  background-position: 0 90%;
-  background-repeat: repeat no-repeat;
+  background-position: 0px 90%;
+  background-repeat: repeat-x;
   background-size: 4px 3px;
-  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
   border-style: solid;
   border-width: 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
   box-sizing: border-box;
-  color: #9ab;
+  color: rgb(153, 170, 187);
   cursor: pointer;
   display: inline-block;
   font-family: Neucha, sans-serif;
@@ -62,37 +68,63 @@ button#pickbtn {
   outline: none;
   padding: 0.75rem;
   text-decoration: none;
-  transition: all 235ms ease-in-out;
-  border-bottom-left-radius: 15px 255px;
-  border-bottom-right-radius: 225px 15px;
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
+  transition: all 235ms ease-in-out 0s;
   user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 .button-55:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+  transform: translate3d(0px, 2px, 0px);
 }
+
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
 }
+
 a {
-  /* color: #9ab; */
   cursor: pointer;
   text-decoration: none;
 }
-/* Media Query for Laptops and Desktops */
+
+.footer {
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: red; */
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1280px) {
   #choice {
     width: 50%;
   }
 }
 
-/* Media Query for Large screens */
 @media (min-width: 1281px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #choice {
-    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-section {
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    text-align: center;
+    width: 621px;
+    /* outline: 1px solid; */
   }
 }
