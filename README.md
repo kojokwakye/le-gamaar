@@ -1,4 +1,4 @@
-# [le-gamaar](https://kojokwakye.github.io/le-gamaar/)
+# [Le-gamaar](https://kojokwakye.github.io/le-gamaar/)
 
 ## - v01
 
