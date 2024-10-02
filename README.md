@@ -2,4 +2,4 @@
 
 ## - v01
 
-basically a web-app to pick random movies
+basically, a web-app to pick random movies
