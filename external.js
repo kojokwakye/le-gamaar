@@ -19,7 +19,7 @@ async function getRandomMovie() {
     const randomIndex = Math.floor(Math.random() * data.results.length);
     const randomMovie = data.results[randomIndex];
 
-    // Display the chosen movie's details on your webpage
+    // display the chosen movie's details on your webpage
     console.log(randomMovie);
     // let choice = document.getElementById("choice");
     const movieTitle = document.getElementById("movieTitle");
